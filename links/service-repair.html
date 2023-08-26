@@ -1,167 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service repair</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./links/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service repair</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning";>
-            <div class="container-fluid">
-                <img src="../photos/logo/received_835826477568940.jpg" alt="" width="10%">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <!-- <li class="nav-item">
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning" ;>
+      <div class="container-fluid">
+        <img src="../photos/logo/received_835826477568940.jpg" alt="" width="10%">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
                     <a class="nav-link" href="./links/product.html">Product</a>
                   </li> -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
-                  <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./product-parts.html">Motorcycle Parts</a></li>
-                      <li><a class="dropdown-item" href="./product-unit.html">Motorcycle Unit</a></li>
-                  </ul>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                  <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./sevice-paint.html">Custom Paint</a></li>
-                      <li><a class="dropdown-item" href="./service-customize.html">Customize</a></li>
-                      <li><a class="dropdown-item active" href="./service-repair.html">Repair & Services</a></li>
-                  </ul>
-    
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </li>
-                  </li>
-                </ul>
-                <button type="button" class="btn btn-primary m-2 p-1" data-bs-toggle="modal" data-bs-target="#modalRegisterForm">
-                  Register
-                </button>
-    
-                      <!-- Modal register -->
-                      <div class="modal fade" id="modalRegisterForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-4" id="exampleModalLabel">Register</h1>
-                              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                            </div>
-                            <div class="modal-body bg-warning ">
-                                <form>
-                                    <table>
-                                        <tr>
-                                            <tr>
-                                                <td><input type="text" id="username" name="username" placeholder="Full name"></td>
-                                            </tr>
-                                            <tr>
-                                              <td><input type="email" id="" name="email" placeholder="Email"></td>
-                                          </tr>
-                                          <tr>
-                                            <td><input type="text" id="username" name="username" placeholder="Create username"></td>
-                                        </tr>
-                                          <tr>
-                                            <td><input type="password" id="password" name="password" placeholder="Create password"></td>
-                                        </tr>
-                                        <tr>
-                                          <td><input type="password" id="password" name="password" placeholder="Confirm password"></td>
-                                        </tr> 
-    
-                                                <td><input type="checkbox" id="terms" name="terms"></td>
-                                                <td>I agree to the terms and condition</td>
-                                            <!-- <tr >
-                                                <td colspan="2">  
-                                                <a href="#">Register</a></td>
-                                        </tr> -->
-                                        </tr>
-                                    </table>
-                                </form>
-                        
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Submit</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end of Register -->
-                      <button type="button" class="btn btn-primary m-2 p-1" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
-                        Login
-                      </button>
-    
-                      <!-- Modal login -->
-                      <div class="modal fade" id="modalLoginForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-4" id="exampleModalLabel">Log in</h1>
-                              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                            </div>
-                            <div class="modal-body bg-warning">
-                                <form>
-                                    <table>
-                                        <tr>
-                                          <tr>
-                                            <td><input type="text" id="username" name="username" placeholder="username"></td>
-                                        </tr>
-                                      <tr>
-                                        <td><input type="password" id="password" name="password" placeholder="password"></td>
-                                      </tr>
-                                            <td><input type="checkbox" id="terms" name="terms">I agree to the terms and condition</td>
-                                                
-                                        </tr>
-                                    </table>
-                                </form>
-                        
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Log in</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end of login -->
-                  <!-- search bar -->
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
-                </form>
-                  <!-- end of search -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Product</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./product-parts.html">Motorcycle Parts</a></li>
+                <li><a class="dropdown-item" href="./product-unit.html">Motorcycle Unit</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./sevice-paint.html">Custom Paint</a></li>
+                <li><a class="dropdown-item" href="./service-customize.html">Customize</a></li>
+                <li><a class="dropdown-item active" href="./service-repair.html">Repair & Services</a></li>
+              </ul>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+          </li>
+          </li>
+          </ul>
+          <button type="button" class="btn btn-secondary m-2 p-1" data-bs-toggle="modal"
+            data-bs-target="#modalRegisterForm">
+            Register
+          </button>
+
+          <!-- Modal register -->
+          <div class="modal fade" id="modalRegisterForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4" id="exampleModalLabel">Register</h1>
+                </div>
+                <div class="modal-body bg-warning ">
+                  <form>
+                    <table>
+                      <tr>
+                      <tr>
+                        <td><input type="text" id="username" name="username" placeholder="Full name"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="email" id="" name="email" placeholder="Email"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" id="username" name="username" placeholder="Create username"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="password" id="password" name="password" placeholder="Create password"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="password" id="password" name="password" placeholder="Confirm password"></td>
+                      </tr>
+
+                      <td><input type="checkbox" id="terms" name="terms"></td>
+                      <td>I agree to the terms and condition</td>
+                      </tr>
+                    </table>
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary">Submit</button>
                 </div>
               </div>
-          </nav>
+            </div>
+          </div>
+          <!-- end of Register -->
+          <button type="button" class="btn btn-secondary m-2 p-1" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+            Login
+          </button>
+
+          <!-- Modal login -->
+          <div class="modal fade" id="modalLoginForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4" id="exampleModalLabel">Log in</h1>
+                  <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body bg-warning">
+                  <form>
+                    <table>
+                      <tr>
+                      <tr>
+                        <td><input type="text" id="username" name="username" placeholder="username"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="password" id="password" name="password" placeholder="password"></td>
+                      </tr>
+                      <td><input type="checkbox" id="terms" name="terms">I agree to the terms and condition</td>
+
+                      </tr>
+                    </table>
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary">Log in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of login -->
+          <!-- search bar -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+          <!-- end of search -->
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container mt-4">
+    <h2 class="mb-3">Motorcycle Repair & Services</h2>
+    <table class="table table-bordered table-responsive">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Oil Change</td>
+          <td>Replace engine oil and oil filter</td>
+          <td>₱50</td>
+        </tr>
+        <tr>
+          <td>Tire Replacement</td>
+          <td>Install new tires and balance wheels</td>
+          <td>₱80 (per tire)</td>
+        </tr>
+        <tr>
+          <td>Brake Inspection</td>
+          <td>Check brake pads, fluid, and perform adjustments</td>
+          <td>₱50</td>
+        <tr>
+          <td>Chain Lubrication</td>
+          <td>Grease and lubricate the chain</td>
+          <td>₱20</td>
+        </tr>
+        <tr>
+          <td>Spark Plug Replacement</td>
+          <td>Install new spark plugs for improved ignition</td>
+          <td>₱50</td>
+        </tr>
+        <tr>
+          <td>Engine Tune-up</td>
+          <td>Adjust and optimize engine performance</td>
+          <td>₱150</td>
+        </tr>
+        <tr>
+          <td>Battery Check</td>
+          <td>Test and inspect the battery's health</td>
+          <td>₱50</td>
+        </tr>
+        <tr>
+          <td>Clutch Adjustment</td>
+          <td>Ensure proper clutch engagement</td>
+          <td>₱50</td>
+        </tr>
+        <tr>
+          <td>Exhaust System Inspection</td>
+          <td>Check for leaks and proper functioning</td>
+          <td>₱60</td>
+        </tr>
+        <tr>
+          <td>Electrical Diagnosis</td>
+          <td>Identify and resolve electrical issues</td>
+          <td>₱100</td>
+        </tr>
+        <tr>
+          <td>Lights and Signals Repair</td>
+          <td>Repair malfunctioning lights and signals</td>
+          <td>₱50</td>
+        </tr>
+        <tr>
+          <td>Wiring Repair</td>
+          <td>Fix damaged wiring and connections</td>
+          <td>₱100</td>
+        </tr>
+        <tr>
+          <td>Starter Motor Replacement</td>
+          <td>Install a new starter motor</td>
+          <td>₱150</td>
+        </tr>
+        <tr>
+          <td>Charging System Check</td>
+          <td>Inspect alternator and charging system</td>
+          <td>₱75</td>
+        <tr>
+          <td>Front Pannel Replacement</td>
+          <td>Remove and replace front pannel</td>
+          <td>₱350</td>
+        <tr>
+          <td>Install MDL Lights</td>
+          <td>Install additional lighting</td>
+          <td>₱250</td>
+        <tr>
+          <td>Fuel Filter Replacement</td>
+          <td>Replace fuel filter</td>
+          <td>₱100</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><br>
+  <center>
+    <div class="btn-group"><br><br>
+      <a href="../links/form.html" class="btn btn-secondary p-3" aria-current="page">Book Appointment</a>
     </div>
-            <!-- footer -->
-  <div class="container-fluid">
+  </center><br><br>
+
+  <!-- footer -->
+  <div class="container-fluid p-0">
     <footer class="text-center text-lg-start bg-warning p-0">
-      <div class="container d-flex justify-content-center py-5">
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+      <div class="container d-flex justify-content-center py-4">
+        <button type="button" class="btn btn-secondary btn-lg btn-floating mx-2" style="background-color: #6C757D;">
           <i class="bi bi-facebook"></i>
         </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <button type="button" class="btn btn-secondary btn-lg btn-floating mx-2" style="background-color: #6C757D;">
+          <i class="bi bi-twitter"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-lg btn-floating mx-2" style="background-color: #6C757D;">
           <i class="bi bi-instagram"></i>
         </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-          <i class="bi bi-instagram"></i>
-        </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <button type="button" class="btn btn-secondary btn-lg btn-floating mx-2" style="background-color: #6C757D;">
           <i class="bi bi-youtube"></i>
         </button>
       </div>
@@ -176,7 +283,8 @@
 
   </div>
 
-    
-    
+
+
 </body>
+
 </html>
